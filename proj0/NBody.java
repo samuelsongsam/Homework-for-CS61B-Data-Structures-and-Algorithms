@@ -1,6 +1,6 @@
 public class NBody{
-    public static int N;
-    public static double R;
+    private static int N;
+    private static double R;
 
     public static double readRadius(String FileName){
         In in = new In(FileName);
