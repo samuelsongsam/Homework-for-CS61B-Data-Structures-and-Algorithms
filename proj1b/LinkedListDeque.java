@@ -5,31 +5,31 @@ public class LinkedListDeque<T> implements Deque<T> {
         T item;
         Node post;
 
-        public Node() {
+        Node() {
             pre = null;
             item = null;
             post = null;
         }
 
-        public Node(Node previous, T i, Node posture) {
+        Node(Node previous, T i, Node posture) {
             pre = previous;
             item = i;
             post = posture;
         }
 
-        public Node(T i) {
+        Node(T i) {
             pre = null;
             item = i;
             post = null;
         }
 
-        public Node(Node previous, T i) {
+        Node(Node previous, T i) {
             pre = previous;
             item = i;
             post = null;
         }
 
-        public Node(T i, Node posture) {
+        Node(T i, Node posture) {
             pre = null;
             item = i;
             post = posture;
