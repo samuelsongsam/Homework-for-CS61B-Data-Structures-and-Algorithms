@@ -26,24 +26,24 @@ public class TestArrayDequeGold {
                         Integer addFirstItem = StdRandom.uniform(100);
                         stuDeque.addFirst(addFirstItem);
                         solDeque.addFirst(addFirstItem);
-                        message += "Operation No." + i + ": addFirst(" + addFirstItem + ")\n";
+                        message += "addFirst(" + addFirstItem + ")\n";
                         break;
                     case 1:
                         Integer addLastItem = StdRandom.uniform(100);
                         stuDeque.addLast(addLastItem);
                         solDeque.addLast(addLastItem);
-                        message += "Operation No." + i + ": addFirst(" + addLastItem + ")\n";
+                        message += "addFirst(" + addLastItem + ")\n";
                         break;
                     case 2:
                         Integer stuRemoveFirst = stuDeque.removeFirst();
                         Integer solRemoveFirst = solDeque.removeFirst();
-                        message += "Operation No." + i + ": removeFirst()\n";
+                        message += "removeFirst()\n";
                         assertEquals(stuRemoveFirst, solRemoveFirst);
                         break;
                     default:
                         Integer stuRemoveLast = stuDeque.removeLast();
                         Integer solRemoveLast = solDeque.removeLast();
-                        message += "Operation No." + i + ": removeFirst()\n";
+                        message += "removeFirst()\n";
                         assertEquals(message, solRemoveLast, stuRemoveLast);
                 }
             }
